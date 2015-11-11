@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time></span>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        <p class="teaser">
+        {{ post.excerpt | strip_html | truncatewords: 50, '...' }} <a href="{{post.url}}">Mehr</a>
+        </p>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

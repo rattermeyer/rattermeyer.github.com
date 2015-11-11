@@ -1,0 +1,9 @@
+<div class="grid grid-pad">
+  <div class="col-1-1">
+    <ul class="social">
+    {% for profile in site.data.profiles %}
+      <li><a href="{{profile.url}}"><strong>{{profile.service}}</strong>/{{profile.username}}</a></li>
+    {% endfor %}
+    </ul>
+  </div>
+</div>

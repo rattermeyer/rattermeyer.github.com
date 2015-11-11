@@ -1,0 +1,41 @@
+# Site settings
+title: Richard Attermeyer
+email: richard.attermeyer@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Ein Blog über Softwarearchitektur, Continuous Delivery, DevOps, Agile und private Dinge.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.richardattermeyer.de" # the base hostname & protocol for your site
+twitter_username: rattermeyer
+github_username:  rattermeyer
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  input: GFM
+
+timezone: Europe/Berlin
+
+collections:
+  authors:
+    output: true
+    permalink: /authors/:path/
+
+highlight: pygments
+
+excerpt_separator: "<!--more-->"
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  

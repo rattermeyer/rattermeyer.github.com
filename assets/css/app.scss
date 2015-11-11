@@ -1,0 +1,84 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
+
+// Typography
+$font-family: "PT Sans", sans-serif; 
+
+@import "normalize.css";
+@import "simplegrid.css";
+@import "font-awesome.min.css";
+
+$base-font-size:   100%;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+
+body {
+  font-size: $base-font-size ;
+  font-family: $font-family;
+}
+
+.teaser {
+  font-style: italic;
+}
+
+.post-meta {
+  font-size: $small-font-size;
+  color: $grey-color;
+  display: inline;
+  padding: 0px;
+}
+
+.post-meta li {
+  list-style-type: none;
+  display: inline;
+}
+
+.social {
+  display: inline;
+  padding: 0px;
+}
+
+.social li {
+  list-style-type: none;
+  display: inline;
+}
+
+.services {
+  padding: 0px;
+  list-style-type: none;
+}
+
+
+.services li {
+  list-style-type: none;
+}
+
+.post-list {
+  padding: 0px;
+}
+.post-list li {
+  list-style-type: none;
+}
+
+.archive-list {
+  padding: 0px;
+}
+
+.archive-list li {
+  list-style-type: none;
+}
+
+.site-footer {
+  background-color: $grey-color-light;
+}
+

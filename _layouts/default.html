@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="grid grid-pad">
+      <div class="col-9-12">
+        {{ content }}
+      </div>
+      <div class="col-3-12">
+        <input type="text" placeholder="Suchbegriff">
+        <h3>Archiv</h3>
+        <ul class="archive-list">
+        {% for post in site.posts %}
+          <li><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
