@@ -3,7 +3,7 @@
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
     <ul class="post-meta">
-      <li ><i class="fa fa-calendar"></i><time datetime="{{ post.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</li>
+      <li ><i class="fa fa-calendar"></i>&nbsp;<time datetime="{{ post.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</li>
       {% if post.categories != empty %}
       <li>
         {% for category in post.categories %}
@@ -17,7 +17,7 @@
     </ul>
     <div class="authors">
         {% for author in page.authors %}
-        {% for s_author in site.authors %}{% if s_author.username == author %}{{ s_author.name }}{% endif %}{% endfor %}{% unless author == page.authors.last %}, {% endunless %}
+        {% for s_author in site.authors %}{% if s_author.username == author %}<em><a href="{{ site.baseurl }}{{s_author.url}}">{{ s_author.name }}</a></em>{% endif %}{% endfor %}{% unless author == page.authors.last %}, {% endunless %}
         {% endfor %}
     </div>
   </header>
@@ -25,11 +25,11 @@
     {{ content }}
 
     {% if is_single %}
-    <div class="grid grid-pad">
+    <div class="grid">
       <div class="col-1-1">
         <div class="shariff" data-services="[&quot;twitter&quot;,&quot;googleplus&quot;,&quot;xing&quot;,&quot;linkedin&quot;]" data-twitter-via="oc_wire" data-theme="white"></div>
       </div>
-  </div>
+    </div>
     {% endif %}
     {% if is_single and site.disqus_username %}
     <section>

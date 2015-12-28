@@ -1,26 +1,32 @@
 - service: twitter
   username: rattermeyer
   url: http://www.twitter.com/rattermeyer
+  icon: twitter
 
 - service: google+
   username: richardattermeyer
   url: http://www.google.com/+RichardAttermeyer
+  icon: google-plus
 
 - service: github
   username: rattermeyer
   url: http://www.github.com/rattermeyer
+  icon: github
 
 - service: stackoverflow
   username: rattermeyer
   url: http://stackoverflow.com/users/1838932/rattermeyer
+  icon: stack-overflow
 
 - service: facebook
   username: rattermeyer
   url: http://www.facebook.com/rattermeyer
+  icon: facebook
 
 - service: xing
   username: richard_attermeyer
   url: http://www.xing.com/profile/Richard_Attermeyer
+  icon: xing
 
 - service: lanyrd
   username: richard_attermeyer
@@ -29,4 +35,4 @@
 - service: email
   username: richard.attermeyer
   url: mailto:richard.attermeyer@gmail.com
-
+  icon: envelope-o

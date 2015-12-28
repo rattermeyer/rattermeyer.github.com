@@ -2,7 +2,7 @@
   <div class="col-1-1">
     <ul class="social">
     {% for profile in site.data.profiles %}
-      <li><a href="{{profile.url}}"><strong>{{profile.service}}</strong>/{{profile.username}}</a></li>
+      <li><a href="{{profile.url}}">{% if profile.icon != null %}<i class="fa fa-2x fa-{{profile.icon}}"></i>{% else %}<strong>{{profile.service}}</strong>{% endif %}</a></li>&nbsp;
     {% endfor %}
     </ul>
   </div>
