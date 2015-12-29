@@ -69,4 +69,4 @@ talks:
         date: MM.DD.YYYY
 ---
 
-Richard Attermeyer ist Senior Solution Architect bei der OPITZ CONSULTING Deutschland GmbH. Er beschäftigt sich seit mehreren Jahren mit der Architektur und Implementierung von Anwendungen im agilen Umfeld. Er fokussiert sich dabei aktuell auf Themen rund um DevOps.
+Richard Attermeyer ist Senior Solution Architect bei der OPITZ CONSULTING Deutschland GmbH. Er beschäftigt sich seit mehreren Jahren mit der Architektur und Implementierung von Anwendungen im agilen Umfeld. Er fokussiert sich dabei aktuell auf Themen rund um DevOps und Continuous Delivery.

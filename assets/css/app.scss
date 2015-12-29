@@ -25,6 +25,7 @@ $grey-color-dark:  darken($grey-color, 25%);
 body {
   font-size: $base-font-size ;
   font-family: $font-family;
+  background-color: $grey-color-light;
 }
 
 .teaser {
@@ -58,6 +59,9 @@ body {
   color: dimgray;
 }
 
+.main-part {
+  background: white;
+}
 
 .services {
   padding: 0px;
@@ -84,6 +88,51 @@ body {
   list-style-type: none;
 }
 
+.archive-list a {
+  text-decoration: none;
+}
+
+.site-header {
+  margin: 1em;
+  font-size: 150%;
+}
+
+.site-header a {
+  color: dimgray;
+  text-decoration: none;
+  margin: 0.3em;
+}
+
 .site-footer {
   background-color: $grey-color-light;
+}
+
+.site-nav {
+  float: right;
+}
+
+.PageNavigation {
+  font-size: 14px;
+  display: block;
+  overflow: hidden;
+}
+
+.PageNavigation a {
+  display: block;
+  float: left;
+  margin: 1em 0;
+}
+
+.PageNavigation .next {
+  float: right;
+}
+
+.related-articles {
+  list-style: none;
+  padding-left: 0em;
+  padding-right: 1em;
+}
+
+.page-links {
+  float: right;
 }

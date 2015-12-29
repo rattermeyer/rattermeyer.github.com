@@ -7,13 +7,13 @@
 
     {% include header.html %}
 
-    <div class="grid grid-pad">
+    <div class="grid grid-pad main-part">
       <div class="col-9-12">
         {{ content }}
       </div>
       <div class="col-3-12">
         <input type="text" placeholder="Suchbegriff">
-        <h3>Archiv</h3>
+        <h3>Aktuelle Beiträge</h3>
         <ul class="archive-list">
         {% for post in site.posts %}
           <li><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>

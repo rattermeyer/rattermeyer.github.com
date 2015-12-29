@@ -9,11 +9,16 @@
         <li><a href="/feed.xml">Atom-Feed</a></li>
       </ul>
     </div>
+    <div class="col-1-3">
+      <h3>Profiles</h3>
+      {% include profiles.html %}
+    </div>
   </div>
 
-  {% include profiles.html %}
+
+
 
   <script src="/assets/js/libs/jquery-2.1.4.min.js"></script>
   <script src="/assets/js/libs/shariff.min.js"></script>
-
+  {% include google_search.html %}
 </footer>

@@ -1,21 +1,18 @@
 <header class="site-header">
 
-  <div class="wrapper">
-
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
+  <div class="grid">
+    <div class="col-6-12">
+      <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    </div>
+    <div class="col-6-12">
     <nav class="site-nav">
-
-      <div class="trigger">
         {% for page in site.pages %}
           {% if page.title %}
           <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           {% endif %}
         {% endfor %}
-      </div>
+        <a class="page-link" href="{{ site.baseurl }}/authors/richard.attermeyer">Über mich</a>
     </nav>
-
+    </div>
   </div>
-
-
 </header>

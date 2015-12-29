@@ -2,6 +2,14 @@
 <article class="post-content">
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
+    <div class="PageNavigation">
+    {% if page.previous.url %}
+      <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+    {% endif %}
+    {% if page.next.url %}
+      <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+    {% endif %}
+    </div>
     <ul class="post-meta">
       <li ><i class="fa fa-calendar"></i>&nbsp;<time datetime="{{ post.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</li>
       {% if post.categories != empty %}
@@ -27,10 +35,11 @@
     {% if is_single %}
     <div class="grid">
       <div class="col-1-1">
-        <div class="shariff" data-services="[&quot;twitter&quot;,&quot;googleplus&quot;,&quot;xing&quot;,&quot;linkedin&quot;]" data-twitter-via="oc_wire" data-theme="white"></div>
+        <div class="shariff" data-services="[&quot;twitter&quot;,&quot;googleplus&quot;,&quot;xing&quot;,&quot;linkedin&quot;]" data-twitter-via="oc_wire" data-theme="standard"></div>
       </div>
     </div>
     {% endif %}
+
     {% if is_single and site.disqus_username %}
     <section>
       <h3>Kommentare</h3>
@@ -44,7 +53,7 @@
     <footer>
       <nav role="related">
         <h3>Verwandte Artikel</h3>
-        <ul>
+        <ul class="related-articles">
           {% for related in site.related_posts limit:3 %}
           <li><a href="{{ related.url }}">{{ related.title }}</a></li>
           {% endfor %}
