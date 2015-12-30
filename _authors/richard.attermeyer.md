@@ -45,28 +45,50 @@ social:
 
 articles:
   -
-    title: "ABC"
-    description: "CDE"
+    title: "Datenzentrale für DevOps"
+    description: "Logmanagent: aktuelle Treiber, Lösungen und Praxis"
+    magazine: "Business Technology"
     coauthors:
-      - "First"
-      - "Second"
-    magazines:
-      - name: "DEF"
-        file: "pdf"
-        year: "2014"
-      - name: "GHI"
-        link: "http://"
-        year: "2015"
+      - "waldemar.kaus"
+    year: "2015"
+    edition: "4.2015 Heft 23"
+    link: "http://test"
+    file: "article.pdf"
 talks:
   -
-    title: "ABC"
-    description: "DEF"
+    title: "Vagrant, Ansible, Docker für Entwickler und Architekten"
+    description: ""
     conferences:
-      - title: "DEF"
-        link: "http://"
-        location: "Essen"
+      - title: "goto.nights Berlin"
+        link: "https://secure.trifork.com/berlin-2015/freeevent/index.jsp?eventOID=6981"
+        location: "Berlin"
+        date: 2015-10-13
+  -
+    title: "DevOps und ITIL: Waffenbrüder oder Feinde?"
+    conferences:
+      - title: "solutions.hamburg"
+        date: 2015-09-11
+        location: "Hamburg"
+        link: ""
+      - title: "OOP 2015"
+        date: "2015-01-26"
+        location: "München"
+        link: "http://de.slideshare.net/opitzconsulting/devops-und-itil-waffenbrder-oder-feinde"
         cospeaker:
-        date: MM.DD.YYYY
+          - "Ines Möckel"
+  - title: "DevOps und ITIL: Ein Erfahrungsbericht"
+    conferences:
+      - title: "JAX 2015"
+        date: "2015-04-22"
+        location: "Mainz"
+        link: "http://de.slideshare.net/opitzconsulting/devops-und-itil-ein-erfahrungsbericht"
+  - title: "Vagrant, Puppet, Docker für Entwickler und Architekten"
+    description: "Softwareentwicklung, -test und -betrieb können durch Virtualisierung viele Vorteile erzielen. In diesem Zusammenhang werden häufig Werkzeuge für die Bereitstellung von Umgebungen eingesetzt.Verschiedene Werkzeuge adressieren aber unterschiedliche Einsatzszenarien. Wo im Applikationslebenszyklus können diese Werkzeuge sinnvoll eingesetzt werden und wie sieht es mit Kosten und Nutzen aus?"
+    conferences:
+      - title: "W-JAX 2014"
+        link: "https://secure.trifork.com/berlin-2015/freeevent/index.jsp?eventOID=6981"
+        location: "München"
+        date: 2014-11-05
 ---
 
 Richard Attermeyer ist Senior Solution Architect bei der OPITZ CONSULTING Deutschland GmbH. Er beschäftigt sich seit mehreren Jahren mit der Architektur und Implementierung von Anwendungen im agilen Umfeld. Er fokussiert sich dabei aktuell auf Themen rund um DevOps und Continuous Delivery.
