@@ -1,7 +1,8 @@
 ---
 username: richard.attermeyer
 name: Richard Attermeyer
-email: richard.attermeyer@opitz-consulting.de
+email: richard.attermeyer@gmail.com
+gravatar_hash: e0e6a850db57dd74dc994832ecbf3101
 website: http://blog.devopsarchitect.de
 social:
   - service: twitter
@@ -56,8 +57,8 @@ articles:
     file: "article.pdf"
 talks:
   -
-    title: "Vagrant, Ansible, Docker für Entwickler und Architekten"
-    description: ""
+    title: "Vagrant, Ansible, Docker"
+    description: "Projects and companies are moving from continuous integration to continuous delivery. This often involves the evolution from static to dynamic environments. Dynamic environments are the norm in cloud-based infrastructures. This move requires new processes and new tools. But these tools all support different use-cases. This talk provides an overview of where the different tools fit in the continuous delivery process and what costs and benefits are associated with introducing them."
     conferences:
       - title: "goto.nights Berlin"
         link: "https://secure.trifork.com/berlin-2015/freeevent/index.jsp?eventOID=6981"
