@@ -28,8 +28,12 @@ body {
   background-color: $grey-color-light;
 }
 
+a {
+  text-decoration: none;
+  color: DarkSlateGray;
+}
+
 .teaser {
-  font-style: italic;
 }
 
 .post-meta {
@@ -68,7 +72,10 @@ body {
   list-style-type: none;
 }
 
-
+.title {
+  text-transform:uppercase;
+  font-weight: bold;
+}
 .services li {
   list-style-type: none;
 }

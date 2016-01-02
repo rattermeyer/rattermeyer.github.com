@@ -4,6 +4,10 @@ title: "Architekturarbeit, DevOps und Continuous Delivery"
 date: "2015-10-14 09:11:35 +0000"
 authors:
   - richard.attermeyer
+tags:
+  - "continuous delivery"
+categories:
+  - "devops"
 ---
 Aktuell ist Continuous Delivery in vielen Firmen angekommen. Aber woran orientiert sich ein Projekt, wenn es einen CD-Prozess aufsetzen will?
 Anforderungen an den CD Prozess sind keine funktionalen Anforderungen. Wie die Software gebaut wird ist den Fachanwendern daher egal, oder nicht?

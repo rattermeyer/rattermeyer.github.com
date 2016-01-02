@@ -12,10 +12,10 @@
         {{ content }}
       </div>
       <div class="col-3-12">
-        <input type="text" placeholder="Suchbegriff">
+        <input type="text" placeholder="Suchbegriff" style="width:100%  ">
         <h3>Aktuelle Beiträge</h3>
         <ul class="archive-list">
-        {% for post in site.posts %}
+        {% for post in site.posts limit:5 %}
           <li><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
         {% endfor %}
         </ul>

@@ -4,17 +4,21 @@ layout: default
 
 <div class="home">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time></span>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <p class="teaser">
-        {{ post.excerpt | strip_html | truncatewords: 50, '...' }} <a href="{{post.url}}">Mehr</a>
-        </p>
-      </li>
-    {% endfor %}
-  </ul>
+  <div class="grid grid-pad">
+    <ul class="post-list">
+      {% for post in site.posts %}
+      <div class="col-1-3">
+        <li>
+          <div class="title">
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </div>
+          <span class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time></span>
+          <p class="teaser">
+          {{ post.excerpt | strip_html | truncatewords: 50, '...' }}   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><em>Mehr</em></a>
+          </p>
+        </li>
+      </div>
+      {% endfor %}
+    </ul>
+  </div>
 </div>
