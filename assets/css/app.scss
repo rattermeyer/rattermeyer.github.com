@@ -65,6 +65,19 @@ a {
   padding: 0px;
 }
 
+.tags-list {
+}
+
+.tags-list li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.tags-list li a:hover {
+  font-weight: bold;
+}
+
 .social li {
   color: black;
   list-style-type: none;

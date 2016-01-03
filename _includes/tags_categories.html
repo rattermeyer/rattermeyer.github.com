@@ -1,0 +1,16 @@
+Ein Klick auf das Schlüsselwort führt zur Liste der mit diesem Schlüsselwort assoziierten Beiträge.
+<ul id="tags" class="tags-list">
+  {% for tag in include.collection %}
+    	<li id="{{ tag | first | replace: ' ', '_'}}"><h3>{{ tag | first }}</h3>
+        <ul>
+          {% for posts in tag %}
+            {% for post in posts %}
+              {% if post.title %}
+              <li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d.%m.%Y" }}</time>&nbsp; <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+        </ul>
+      </li>
+  {% endfor %}
+</ul>
