@@ -25,7 +25,7 @@ $grey-color-dark:  darken($grey-color, 25%);
 body {
   font-size: $base-font-size ;
   font-family: $font-family;
-  background-color: $grey-color-light;
+  background-color: white;
 }
 
 a {
@@ -36,6 +36,13 @@ a {
 .teaser {
 }
 
+.post-abstract {
+}
+
+.post-abstract:hover{
+  background: yellow;
+}
+
 .post-meta {
   font-size: $small-font-size;
   color: $grey-color;
@@ -44,6 +51,11 @@ a {
 }
 
 .post-meta li {
+  list-style-type: none;
+  display: inline;
+}
+
+.post-tags ul {
   list-style-type: none;
   display: inline;
 }
@@ -93,6 +105,7 @@ a {
 
 .archive-list li {
   list-style-type: none;
+  margin-bottom: 0.4em;
 }
 
 .archive-list a {

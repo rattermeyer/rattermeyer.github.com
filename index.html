@@ -9,13 +9,24 @@ layout: default
       {% for post in site.posts %}
       <div class="col-1-3">
         <li>
-          <div class="title">
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <div class="post-abstract">
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                <div class="title">
+                {{ post.title }}
+              </div>
+              </a>
+              <ul class="post-meta">
+                <li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time></li>
+                <li>{{ post.content | number_of_words }} Wörter</li>
+                <li><a href="{{ post.url }}#comments" class="disqus-comment-count" data-disqus-identifier="{{ post.url }}"></a></li>
+              </ul>
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                <p class="teaser">
+                {{ post.excerpt | strip_html | truncatewords: 50, '...' }}
+                </p>
+            </a>
           </div>
-          <span class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time></span>
-          <p class="teaser">
-          {{ post.excerpt | strip_html | truncatewords: 50, '...' }}   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><em>Mehr</em></a>
-          </p>
+        </a>
         </li>
       </div>
       {% endfor %}
