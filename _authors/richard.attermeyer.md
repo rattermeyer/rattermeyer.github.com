@@ -91,5 +91,13 @@ talks:
         location: "München"
         date: 2014-11-05
 ---
+Diesen Blog habe ich neu gestartet, um über verschiedene Dinge zu schreiben: Privates, Hobbies und Berufliches.
+Wenn ich nicht arbeite, dann hält mich meine Familie ziemlich beschäftigt. Dazu zählen insbesondere meine beiden Kinder.
+Daneben versuche ich Zeit für den [Chor](http://www.unichor.hhu.de/) zu finden, zu [tanzen](http://www.tcgw.org/) und zu fotografieren.
 
-Richard Attermeyer ist Senior Solution Architect bei der OPITZ CONSULTING Deutschland GmbH. Er beschäftigt sich seit mehreren Jahren mit der Architektur und Implementierung von Anwendungen im agilen Umfeld. Er fokussiert sich dabei aktuell auf Themen rund um DevOps und Continuous Delivery.
+Beruflich arbeite ich als Senior Solution Architect bei der [OPITZ CONSULTING Deutschland GmbH](http://www.opitz-consulting.com/) und beschäftige mich dabei mit allen Dingen rund um die Softwareentwicklung. Meine Definition der Rolle eines Architekten geht über die Lehrbücher hinaus.
+Ein Architekt muss neben der reinen Softwarearchitektur auch den Entwicklungsprozess und den Auslieferungsprozess im Auge haben.
+Er sollte sich also auch mit agilen Prozessen, klassischem Projektmanagement und Themen im Umfeld von Continuous Delivery und DevOps auskennen.
+Aktuell interessieren mich besonders Continuous Delivery und das Microservices Architekturpatern.
+
+Viel Spaß beim Lesen und ich freue mich über die eine oder andere Rückmeldung.
