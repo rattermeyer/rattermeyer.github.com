@@ -27,6 +27,9 @@
   </body>
 
   {% include disqus_commentcount.html %}
+  {% if site.google_analytics_tracking_id %}
+    {% include google_analytics.html %}
+  {% endif %}
   
 
 </html>
