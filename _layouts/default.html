@@ -8,10 +8,10 @@
     {% include header.html %}
 
     <div class="grid grid-pad main-part">
-      <div class="col-9-12">
+      <div class="col-10-12">
         {{ content }}
       </div>
-      <div class="col-3-12">
+      <div class="col-2-12">
         <input type="text" placeholder="Suchbegriff" style="width:100%  ">
         <h3>Aktuelle Beiträge</h3>
         <ul class="archive-list">
@@ -30,6 +30,6 @@
   {% if site.google_analytics_tracking_id %}
     {% include google_analytics.html %}
   {% endif %}
-  
+
 
 </html>
