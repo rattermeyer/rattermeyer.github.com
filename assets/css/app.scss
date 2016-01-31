@@ -12,6 +12,7 @@ $font-family: "PT Sans", sans-serif;
 @import "normalize.css";
 @import "simplegrid.css";
 @import "font-awesome.min.css";
+@import "vertical-timeline";
 
 $base-font-size:   100%;
 $small-font-size:  $base-font-size * 0.875;
@@ -59,8 +60,14 @@ a {
 }
 
 .post-tags ul {
+  padding: 0px;
+}
+
+.post-tags ul li {
   list-style-type: none;
   display: inline;
+  margin-right: 0.2em;
+
 }
 
 .social {

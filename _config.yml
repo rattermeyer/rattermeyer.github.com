@@ -34,6 +34,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      permalink: /:categories/:year/:month/:day/:title
   -
     scope:
       path: ""

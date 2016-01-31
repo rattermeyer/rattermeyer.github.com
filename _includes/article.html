@@ -22,11 +22,7 @@
       <li><a href="{{ post.url }}#comments" class="disqus-comment-count" data-disqus-identifier="{{ post.url }}">Kommentare</a></li>
       {% if is_single %}<li><a href="{{ post.url }}">Permalink</a></li>{% endif %}
     </ul>
-    <div class="authors">
-        {% for author in page.authors %}
-        {% for s_author in site.authors %}{% if s_author.username == author %}<em><a href="{{ site.baseurl }}{{s_author.url}}">{{ s_author.name }}</a></em>{% endif %}{% endfor %}{% unless author == page.authors.last %}, {% endunless %}
-        {% endfor %}
-    </div>
+    {% include authors.html authors=post.authors %}
   </header>
 
     {{ content }}

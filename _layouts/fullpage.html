@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="grid grid-pad main-part">
+      <div class="col-12-12">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+  {% include disqus_commentcount.html %}
+  {% if site.google_analytics_tracking_id %}
+    {% include google_analytics.html %}
+  {% endif %}
+
+
+</html>

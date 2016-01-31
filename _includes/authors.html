@@ -1,0 +1,10 @@
+<div class="authors">
+    {% for author in include.authors %}
+      {% for s_author in site.authors %}
+        {% if s_author.username == author %}
+          <em><a href="{{ site.baseurl }}{{s_author.url}}">{{ s_author.name }}</a></em>
+        {% endif %}
+      {% endfor %}
+      {% unless author == include.authors.last %}, {% endunless %}
+    {% endfor %}
+</div>
