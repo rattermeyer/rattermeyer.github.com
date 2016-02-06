@@ -2,10 +2,15 @@
 layout: post
 title: "Businesstreiber für Microservices"
 date: "2016-01-03 11:17:57 +0100"
+authors:
+  - richard.attermeyer
+categories:
+  - Architektur
+tags:
+  - Architekturmuster
+  - Businesstreiber
+  - Architektur
 ---
-
-(--- Early DRAFT ---)
-
 Microservices sind trendy. Aber das allein reicht nicht dafür aus, ein
 bestimmtes Architekturmuster zu verwenden. Es müssen auch wichtige
 Businesstreiber vorhanden sein für die Microservices eine geeignete
@@ -54,7 +59,3 @@ Damit ergeben sich eine Menge von Businesstreibern:
 * Schnelle Erstellung von Funktionalität ist ein Wettbewerbsvorteil, sogar, wenn diese nicht immer fehlerfrei ist.
 * Wachstum ist wichtiger als Kostenkontrolle
 * Bedienen einer schwankenden Nachfrage ist wichtig
-
-
-
-

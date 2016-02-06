@@ -2,10 +2,8 @@
 layout: default
 ---
 <div class="grid">
-	<div class="col-3-12">
-		<img src="https://www.gravatar.com/avatar/{{ page.gravatar_hash }}?s=200&d=identicon" style="width:100%; max-width:200px"/>
-	</div>
-	<div class="col-9-12">
+	<div class="col-12-12">
+		<img src="https://www.gravatar.com/avatar/{{ page.gravatar_hash }}?s=200&d=identicon" style="width:100%; max-width:200px; float: left; margin: 1em;"/>
 		<h2>{{ page.name }}</h2>
 		<div class="bio">
 			{{ content }}

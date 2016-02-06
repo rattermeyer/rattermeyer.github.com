@@ -22,7 +22,9 @@
       <li><a href="{{ post.url }}#comments" class="disqus-comment-count" data-disqus-identifier="{{ post.url }}">Kommentare</a></li>
       {% if is_single %}<li><a href="{{ post.url }}">Permalink</a></li>{% endif %}
     </ul>
+    {% comment %}
     {% include authors.html authors=post.authors %}
+    {% endcomment %}
   </header>
 
     {{ content }}
@@ -35,7 +37,7 @@
     <nav role="tags" class="post-tags">
     <ul>
       {% for tag in post.tags %}
-      <li><i class="fa fa-tag"></i>&nbsp;<a href="{{ site.baseurl }}/tags.html#{{ tag | replace:' ','_' }}-ref">{{ tag }}</a></li>
+      <li><i class="fa fa-tag"></i>&nbsp;<a href="{{ site.baseurl }}/tags.html#{{ tag | replace:' ','_' }}">{{ tag }}</a></li>
       {% endfor %}
     </ul>
     </nav>

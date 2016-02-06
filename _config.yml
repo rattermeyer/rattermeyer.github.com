@@ -21,8 +21,7 @@ timezone: Europe/Berlin
 collections:
   authors:
     output: true
-    permalink: /authors/:path/
-
+    
 highlight: pygments
 
 excerpt_separator: "<!--more-->"
@@ -34,6 +33,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      permalink: /:categories/:year/:month/:day/:title/
   -
     scope:
       path: ""

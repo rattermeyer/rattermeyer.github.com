@@ -30,9 +30,10 @@ $font-family: "PT Sans", sans-serif;
 @import "font-awesome.min.css";
 @import "vertical-timeline";
 
-$base-font-size:   100%;
+$base-font-size:   110%;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
+$base-font-color: rgba(0,0,0,0.8);
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -42,12 +43,22 @@ $grey-color-dark:  darken($grey-color, 25%);
 body {
   font-size: $base-font-size ;
   font-family: $font-family;
+  line-height: $base-line-height;
   background-color: white;
+  color: $base-font-color;
 }
 
 a {
   text-decoration: none;
   color: DarkSlateGray;
+}
+
+h2 a {
+  color: $base-font-color;
+}
+
+blockquote {
+  font-style: italic;
 }
 
 .bio a {

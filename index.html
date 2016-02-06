@@ -9,19 +9,17 @@ layout: fullpage
     		<div class="cd-timeline-img cd-picture">
     			<!--<img src="assets/img/cd-icon-picture.svg" alt="Picture">-->
     		</div> <!-- cd-timeline-img -->
-
     		<div class="cd-timeline-content">
-    			<h2>{{post.title}}</h2>
+    			<h2><a href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a></h2>
           <ul class="post-meta">
             <li>{{ post.content | number_of_words }} Wörter</li>
             <li><a href="{{ post.url }}#comments" class="disqus-comment-count" data-disqus-identifier="{{ post.url }}"></a></li>
           </ul>
+          {% comment %}
           {% include authors.html authors=post.authors %}
-    			<p>{{ post.excerpt | strip_html | truncatewords: 30, '...' }}</p>
-          <a class="cd-read-more" href="{{ post.url | prepend: site.baseurl }}">
-            Mehr
-          </a>
-    			<span class="cd-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+          {% endcomment %}
+          <p>{{ post.excerpt | strip_html | truncatewords: 30, '...' }}</p>
+          <span class="cd-date">{{ post.date | date: "%Y-%m-%d" }}</span>
     		</div> <!-- cd-timeline-content -->
       </div>
       {% endfor %}
