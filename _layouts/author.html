@@ -30,7 +30,6 @@ layout: default
 	<h3>Vorträge</h3>
 	{% for talk in page.talks %}
 	<h4>{{talk.title}}</h4>
-	<p>{{talk.description}}</p>
 	<ul>
 		{% for conference in talk.conferences %}
 			<li>{{conference.title}}
@@ -45,6 +44,12 @@ layout: default
 		</li>
 		{% endfor %}
 	</ul>
+	{% if talk.description %}
+	<details>
+		<summary>Abstrakt</summary>
+	  <p>{{talk.description}}</p>
+  </details>
+	{% endif %}
 	{% endfor %}
 	<h2>Social Links</h2>
 	<div class="grid">

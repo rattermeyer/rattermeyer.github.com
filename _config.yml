@@ -21,10 +21,8 @@ timezone: Europe/Berlin
 collections:
   authors:
     output: true
-    
-highlight: pygments
 
-excerpt_separator: "<!--more-->"
+highlight: pygments
 
 defaults:
   -
