@@ -53,6 +53,14 @@ a {
   color: DarkSlateGray;
 }
 
+.link-read-more {
+  float: right;
+}
+
+.link-read-more span {
+  margin-left: 0.2em;
+}
+
 h2 a {
   color: $base-font-color;
 }

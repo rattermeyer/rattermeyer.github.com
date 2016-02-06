@@ -18,7 +18,11 @@ layout: fullpage
           {% comment %}
           {% include authors.html authors=post.authors %}
           {% endcomment %}
-          <p>{{ post.excerpt | strip_html | truncatewords: 30, '...' }}</p>
+          <p>{{ post.excerpt | strip_html | truncatewords: 30, '...' }}
+            <a class="link-read-more" href="{{ post.url | prepend: site.baseurl }}">
+              <i class="fa fa-plus"></i><span>Mehr lesen</span>
+            </a>
+          </p>
           <span class="cd-date">{{ post.date | date: "%Y-%m-%d" }}</span>
     		</div> <!-- cd-timeline-content -->
       </div>
