@@ -12,15 +12,17 @@
     <ul class="post-meta">
       <li ><i class="fa fa-calendar"></i>&nbsp;<time datetime="{{ post.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</li>
       {% if post.categories != empty %}
+      &nbsp;
       <li>
+        <i class="fa fa-tags"></i>
         {% for category in post.categories %}
           <a href="/categories/#{{ category }}" title="Artikel zum Thema {{ category | capitalize }}" class="tag">{{ category | capitalize }}</a>{% unless category == post.categories.last %}, {% endunless %}
         {% endfor %}
       </li>
-      {% endif %}
-      <li>{{ content | number_of_words }} Wörter</li>
-      <li><a href="{{ post.url }}#comments" class="disqus-comment-count" data-disqus-identifier="{{ post.url }}">Kommentare</a></li>
-      {% if is_single %}<li><a href="{{ post.url }}">Permalink</a></li>{% endif %}
+      {% endif %}&nbsp;
+      <li><i class="fa fa-clock-o"></i> {{ content | number_of_words }} Wörter</li>&nbsp;
+      <li><i class="fa fa-comments-o"></i> <a href="{{ post.url }}#comments" class="disqus-comment-count" data-disqus-identifier="{{ post.url }}">Kommentare</a>&nbsp;</li>
+      {% if is_single %}<li><i class="fa fa-link"></i> <a href="{{ post.url }}">Permalink</a></li>{% endif %}
     </ul>
     {% comment %}
     {% include authors.html authors=post.authors %}

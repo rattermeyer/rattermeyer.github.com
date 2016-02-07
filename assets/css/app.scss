@@ -22,8 +22,8 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 // Typography
-$font-family: "PT Sans", sans-serif;
-//$font-family: "Roboto", sans-serif;
+//$font-family: "PT Sans", sans-serif;
+$font-family: "Roboto", sans-serif;
 
 @import "normalize.css";
 @import "simplegrid.css";
@@ -50,7 +50,11 @@ body {
 
 a {
   text-decoration: none;
-  color: DarkSlateGray;
+  color: DarkBlue;
+}
+
+a:hover {
+  font-weight: bold;
 }
 
 .link-read-more {
@@ -92,6 +96,10 @@ blockquote {
 .post-meta li {
   list-style-type: none;
   display: inline;
+}
+
+.post-meta a {
+  color: DarkSlateGrey;
 }
 
 .post-tags ul {

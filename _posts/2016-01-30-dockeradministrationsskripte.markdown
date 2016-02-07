@@ -37,7 +37,8 @@ Allerdings kann es auch vorkommen, dass beim runterfahren eines Containers diese
 
 Diese Container kann man auch identifizieren und abräumen:
 
-    docker ps -a | grep -v 'Up ' | grep 'Dead' | awk '{print $1}' | xargs -r docker rm
+    docker ps -a | grep -v 'Up ' | grep 'Dead' | awk '{print $1}' \
+    | xargs -r docker rm
 
 Manchmal kann es sein, dass das nicht klappt. Dann hilft nur ein [Abräumen auf dem Host Dateisystem](http://stackoverflow.com/questions/30794108/docker-cannot-remove-dead-container) weiter.
 
@@ -57,7 +58,7 @@ Wenn man allerdings in einer Continuous Delivery Pipeline etwa mit Datenbank Con
 Dies ist durch verschiedene Skripte möglich.
 Es gibt auf github verschiedene Skripte, die darauf beruhen, die genutzten Pfade der Volumes von noch existierenden Containern zu sammeln und alle anderen Volumes aus dem `/var/lib/docker/volumes` (Standardverzeichnis für Volumes) zu entfernen.
 
-Im folgenden seien zwei entsprechende Bash Skripte verlinkt.   
+Im folgenden sind zwei entsprechende Bash Skripte verlinkt.   
 
 * [Bash Skript](https://github.com/chadoe/docker-cleanup-volumes/blob/master/docker-cleanup-volumes.sh)
 * [Python Skript](https://github.com/darthbinamira/dotfiles/blob/1859a36afba2252f86a0a1ff8d5fb442e74b7a0e/tools/docker_clean_vfs.py)
