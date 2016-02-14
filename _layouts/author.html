@@ -11,6 +11,17 @@ layout: default
  	</div>
 	<div class="col-12-12">
 	<h2>Veröffentlichungen und Vorträge</h2>
+	<h3>Blogeinträge</h3>
+	<ul>
+	{% for post in site.posts %}
+		{% for author in post.authors %}
+			{% if author == page.username %}
+				 <li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d.%m.%Y" }}</time> <a href="{{ post.url }}">{{ post.title }}</a></li>
+			{% endif %}
+		{% endfor %}
+	{% endfor %}
+	</ul>
+
 	<h3>Artikel</h3>
 	{% for article in page.articles %}
 	{{ page.name }}
@@ -24,12 +35,24 @@ layout: default
 	[<a href="{{article.link}}"><i class="fa fa-globe"></i></a>]
 	{% endif %}
 	{% if article.file %}
-	[<a href="{{site.baseurl}}/files/publications/{{article.file}}"><i class="fa fa-file-pdf-o"></i></a>]
+	[<a href="{{site.baseurl}}/files/publications/{{article.file}}"><i class="fa fa-download"></i></a>]
 	{% endif %}
 	{% endfor %}
+
 	<h3>Vorträge</h3>
 	{% for talk in page.talks %}
-	<h4>{{talk.title}}</h4>
+	<ul>
+		<li><a href="#{{talk.title | urlencode }}">{{talk.title}}</a></li>
+	</ul>
+  {%endfor %}
+	{% for talk in page.talks %}
+	<h4 id="{{talk.title | urlencode }}">{{talk.title}}</h4>
+	{% if talk.description %}
+	<details>
+		<summary>Abstrakt</summary>
+	  <p>{{talk.description}}</p>
+  </details>
+	{% endif %}
 	<ul>
 		{% for conference in talk.conferences %}
 			<li>{{conference.title}}
@@ -39,18 +62,13 @@ layout: default
 			<a href="{{conference.link}}">[<i class="fa fa-globe"></i>]</a>
 			{% endif %}
 			{% if conference.file %}
-			<a href="{{conference.file}}">[<i class="fa fa-file-o"></i>]</a>
+			<a href="{{conference.file}}">[<i class="fa fa-download"></i>]</a>
 			{% endif %}
 		</li>
 		{% endfor %}
 	</ul>
-	{% if talk.description %}
-	<details>
-		<summary>Abstrakt</summary>
-	  <p>{{talk.description}}</p>
-  </details>
-	{% endif %}
 	{% endfor %}
+  {% comment %}
 	<h2>Social Links</h2>
 	<div class="grid">
 	  <div class="col-1-1">
@@ -61,15 +79,6 @@ layout: default
 	    </ul>
 	  </div>
 	</div>
-	<h3>Blogeinträge</h3>
-	<ul>
-	{% for post in site.posts %}
-		{% for author in post.authors %}
-			{% if author == page.username %}
-			   <li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d.%m.%Y" }}</time> <a href="{{ post.url }}">{{ post.title }}</a></li>
-			{% endif %}
-		{% endfor %}
-	{% endfor %}
-	</ul>
+	{% endcomment %}
 </div>
 </div>

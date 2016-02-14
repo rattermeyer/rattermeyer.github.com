@@ -47,13 +47,13 @@ social:
 articles:
   -
     title: "Datenzentrale für DevOps"
-    description: "Logmanagent: aktuelle Treiber, Lösungen und Praxis"
+    description: "Logmanagement: aktuelle Treiber, Lösungen und Praxis"
     magazine: "Business Technology"
     coauthors:
       - "waldemar.kaus"
     year: "2015"
     edition: "4.2015 Heft 23"
-    link: "http://test"
+#    link: "http://test"
     file: "article.pdf"
 talks:
   -
