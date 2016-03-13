@@ -12,6 +12,7 @@ tags:
   - Configuration-Management
   - Source Control
 ---
+
 Langlebige Branches sind out - es lebe die trunk-basierte Entwicklung. So oder ähnlich lautet ein Mantra im Bereich Continuous Delivery.
 Und ich glaube zu recht. [Paul Hammant][hamm2013] hat sehr gut erklärt, was trunk basierte Entwicklung ist.
 Diese Branching Modell wird aus verschiedenen Gründen gewählt.
@@ -30,7 +31,7 @@ Viele Entwickler werden einwenden, dass es sogenannte breaking-changes gibt, die
 
 Auch dazu gibt es schon erprobte Muster, wie
 
-* [Branch-by-Abstraction](http://paulhammant.com/2013/04/05/what-is-trunk-based-development/)
+* [Branch-by-Abstraction](http://martinfowler.com/bliki/BranchByAbstraction.html)
 * [Feature Toggles](http://martinfowler.com/bliki/FeatureToggle.html)
 
 Dann ist ja alles gut, oder?
@@ -53,6 +54,22 @@ Automatisch wird ein Build auf einem CI Server angestoßen. Dabei wird überprü
 Manuelle Prüfungen bedeutet, dass ein oder mehrere Kollegen im Peer Review die Codeänderung beurteilen.
 Dass viele Projekte den Aufwand für ein manuelles Review scheuen, sollte aber nicht davon abhalten trotzdem ein automatisiertes Review durchzuführen.
 Dies ist auch realisierbar über Jenkins Boardmittel, indem man eine Pre-Commit Pipeline einrichtet.
+In einer pre-commit Pipeline wird der einzucheckende Code automatisch geprüft.
+Das generelle Vorgehen ist dann in der Regel so, dass ein Entwickler nicht direkt auf den "Trunk"
+commited, sondern auf einen "for/trunk" Zweig. Ob dieser Zweig dann "story/for/trunk", "team/for/trunk" oder "entwickler/for/trunk" lautet ist dann egal, da die "for-trunk-Pipeline" per
+Konvention alle Branches baut, die dem Muster "\*/for/trunk" entsprechen.
+Folgende Schritte werden dann häufig in dieser for/trunk Pipeline ausgeführt
+
+* Merge des aktuellen Trunks auf den Branch
+* Bauen des Branches
+* Durchführen von Unit und teilen der Integration und Abnahmetests
+* Merge des Branches in den Trunk
+
+Ziel dabei ist es nicht, dass der Trunk nie wieder rot werden darf, sondern das Risiko zu reduzieren. Man kann über die Anzahl der Testtiefe dieses Risiko steuern und ausgleichen mit der
+Anforderung möglichst schnell Feedback zu bekommen.
+
+In einem aktuellen Projekt bei dem 4 Teams nach dem Muster arbeiten, gibt es in der Regel ein bis
+zweimal die Stunde einen Merge in den Trunk.
 
 ## Weitere Informationen
 Die Beschreibung, wie man einen Pre-Commit Build oder Pre-Commit Pipeline einrichtet, ist für einen Blogpost zu umfangreich.
