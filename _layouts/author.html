@@ -23,21 +23,24 @@ layout: default
 	</ul>
 
 	<h3>Artikel</h3>
+	<ul>
 	{% for article in page.articles %}
-	{{ page.name }}
+	<li>{{ page.name }}
 	{% for author in article.coauthors %}
 	{% assign found = false %}
 	{% for s_author in site.authors %}{% if s_author.username == author %}{% assign found = true %}; <a href="{{ site.baseurl }}{{s_author.url}}">{{ s_author.name }}</a>{% endif %}{% endfor %}{% unless author == article.coauthors.last %}; {% endunless %}
 	{% if found == false %}{{ author }}{% endif %}
 	{% endfor %}
-	: {{article.title}}{% if article.description %} &mdash; {{ article.description }}{% endif %}, in: {{ article.magazine }}, {{ article.edition }}
+	: {{article.title}}, in: {{ article.magazine }}, {{ article.edition }}
 	{% if article.link %}
 	[<a href="{{article.link}}"><i class="fa fa-globe"></i></a>]
 	{% endif %}
 	{% if article.file %}
 	[<a href="{{site.baseurl}}/files/publications/{{article.file}}"><i class="fa fa-download"></i></a>]
 	{% endif %}
+	</li>	
 	{% endfor %}
+	</ul>
 
 	<h3>Vorträge</h3>
 	{% for talk in page.talks %}
