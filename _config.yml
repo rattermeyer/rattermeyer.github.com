@@ -38,3 +38,5 @@ defaults:
       type: "authors"
     values:
       layout: "author"
+plugins:
+  - jekyll-sitemap
