@@ -45,23 +45,17 @@ social:
     icon: envelope-o  
 
 articles:
-  -
-    title: "Datenzentrale für DevOps"
-    description: "Logmanagement: aktuelle Treiber, Lösungen und Praxis"
-    magazine: "Business Technology"
-    coauthors:
-      - "waldemar.kaus"
-    year: "2015"
-    edition: "4.2015 Heft 23"
-#    link: "http://test"
-    file: "article.pdf"
-  -
-    title: "Frontend-Architekturen für Microservice-basierte Systeme"
-    description: "Microservices haben sich als Architekturstil für Softwaresysteme etabliert. Häufig steht dabei die Frage im Raum, ob die Benutzerschnittstelle zu einem Microservice gehört oder nicht. Je nach Antwort gibt es unterschiedliche Möglichkeiten, die Frontend-Architektur zu entwerfen. Unser Experte Richard Attermeyer beschreibt drei häufig anzutreffende Muster und diskutiert, wie sich die aktuelle Entwicklung in der Nutzung von verschiedenen Endgeräten auf die Architektur auswirkt."
-    magazine: Objekt Spektrum Online-Themenspecial
-    year: "2016"
-    edition: "28.04.2016"
-    link: "https://portal.opitz-consulting.de/marketing_vertrieb/Marketing%20u%20Vertriebsmaterial/Presse-Artikel/Objekt%20Spektrum/online-themenspecial-2016-05_microservices_attermeyer.pdf"
+  - 
+    title: "Wissen sammeln - Logmanagement mit Graylog"
+    description: "Es ist noch gar nicht lange her, da interessierte sich in den
+    meisten Unternehmen allerhöchstens der IT-Betrieb für ein systematisches
+    Logmanagement. Im Zuge von aktuellen technologischen und methodischen
+    Entwicklungen wie Cloud Computing, Continuous Delivery und Continuous
+    Deployment wird es für Unternehmen immer wichtiger, den Zustand eines
+    Systems genau zu kennen und schnelle Fehlerdiagnosen zu erstellen."
+    magazine: "Java Magazin" 
+    year: "2016" 
+    edition: "11.2016" 
   -
     title: Context-Aware Frontend Architecture - Beispielszenarien für eine kontextsensitive Applikationslandschaft
     description: "Eine flexible und auf alle Kanäle und Geräte (Omni Channel) ausgerichtete Context-Aware Frontend Architecture (CAFA) kann Unternehmen als Blueprint bei der Modernisierung und Transformation von bestehenden Systemen auf eine flexible Applikationslandschaft dienen. Die Referenzarchitektur, die Rolf Scheuch, Richard Attermeyer und Stephan Rauh in diesem Whitepaper vorstellen, basiert auf Erfahrungen aus unterschiedlichen Projekten. Alle vorgestellten Fallstudien setzen darauf, die bislang monolithischen (Legacy-)Systeme durch neue flexible Applikationsarchitekturen zu ersetzen und entkoppeln dabei Frontend- und Backend-Dienste. Treiber waren die Digitalisierung der bestehenden Geschäftsmodelle sowie ein „Design for Change“-Ansatz zur schnellen Implementierung neuartiger digitaler Geschäftsmodelle."
@@ -73,11 +67,34 @@ articles:
       - "stephan.rauh"
     link: "https://portal.opitz-consulting.de/marketing_vertrieb/Marketing%20u%20Vertriebsmaterial/Whitepaper/2016/whitepaper-context-aware-frontend-architecture.pdf"
   -
+    title: "Frontend-Architekturen für Microservice-basierte Systeme"
+    description: "Microservices haben sich als Architekturstil für Softwaresysteme etabliert. Häufig steht dabei die Frage im Raum, ob die Benutzerschnittstelle zu einem Microservice gehört oder nicht. Je nach Antwort gibt es unterschiedliche Möglichkeiten, die Frontend-Architektur zu entwerfen. Unser Experte Richard Attermeyer beschreibt drei häufig anzutreffende Muster und diskutiert, wie sich die aktuelle Entwicklung in der Nutzung von verschiedenen Endgeräten auf die Architektur auswirkt."
+    magazine: Objekt Spektrum Online-Themenspecial
+    year: "2016"
+    edition: "28.04.2016"
+    link: "https://portal.opitz-consulting.de/marketing_vertrieb/Marketing%20u%20Vertriebsmaterial/Presse-Artikel/Objekt%20Spektrum/online-themenspecial-2016-05_microservices_attermeyer.pdf"
+  -
+    title: "Datenzentrale für DevOps"
+    description: "Logmanagement: aktuelle Treiber, Lösungen und Praxis"
+    magazine: "Business Technology"
+    coauthors:
+      - "waldemar.kaus"
+    year: "2015"
+    edition: "4.2015 Heft 23"
+    file: "article.pdf"
+  -
     title: "Java, gestern, heute, morgen"
     description: "Java in den letzten fünf Jahren: Eine gesetzte Person, die ihre Midlife-Crisis überwunden hat und mit neuem Schwung die nächsten Jahre angeht. Während Java im Jahr 2009 noch eine feste Größe war und es wenig Fortschritt gab, konnte Oracle nach einigen Unruhen in der Community aufgrund der Sun-Übernahme dann doch zeigen, dass es auf die Community hört. Richard Attermeyer blickt anlässlich von 5 Jahren \"Java aktuell\" auf die Java-Entwicklung in dieser Zeit zurück."
     magazine: "Java aktuell"
     year: "2015"
     edition: "05.01.2015"
+  -
+    title: "Don’t break the build! - Advanced Continuous Integration in der Praxis"
+    description: "In der Literatur werden „Broken Builds“ als ein Übel dargestellt, das zu vermeiden ist. Aber ein „Broken Build“ ist nur schlecht, wenn er den Arbeitsfluss des Teams aufhält. Er ist aber ein sehr gutes Feedback-Instrument für einen einzelnen Entwickler. Unser Senior Solution Architect Richard Attermeyer zeigt in diesem Artikel, wie man mittels Git und Jenkins durch geeignete Branching- und CI-Strategien stets einen stabilen Hauptentwicklungszweig sicherstellen und gleichzeitig private Entwickler-Builds durch den CI-Server ausführen lassen kann. PDF lesen "
+    magazine: "Java Spektrum"
+    year: "2014"
+    edition: "5/2014"
+    link: "https://portal.opitz-consulting.de/marketing_vertrieb/Marketing%20u%20Vertriebsmaterial/Presse-Artikel/Java%20Spektrum/java-spektrum-2014-05_advanced-continuous-integration_attermeyer.pdf"
   -
     title: "Microservices architectures – Thoughts from a SOA perspective"
     description: "A frequently discussed topic these days is the Micorservices architectural paradigm. Discussions on various internet blogs and forums are showing the trend that proponents of this approach are not tired of emphasizing why Microservices are different to a holistic SOA approach, when dealing with breaking up or avoiding monolithic software architectures. Our Architects let us know about their thoughts on this item in SOA Magazine, the quarterly newsletter of Oracle's SOA Community"
@@ -90,13 +107,6 @@ articles:
     - torsten.winterberg
     - stefan.scheidt
     link: "https://portal.opitz-consulting.de/marketing_vertrieb/Marketing%20u%20Vertriebsmaterial/Presse-Artikel/SOA%20Magazine/soa-magazine-2014-3_microservices-architectures_bernhardt.pdf"
-  -
-    title: "Don’t break the build! - Advanced Continuous Integration in der Praxis"
-    description: "In der Literatur werden „Broken Builds“ als ein Übel dargestellt, das zu vermeiden ist. Aber ein „Broken Build“ ist nur schlecht, wenn er den Arbeitsfluss des Teams aufhält. Er ist aber ein sehr gutes Feedback-Instrument für einen einzelnen Entwickler. Unser Senior Solution Architect Richard Attermeyer zeigt in diesem Artikel, wie man mittels Git und Jenkins durch geeignete Branching- und CI-Strategien stets einen stabilen Hauptentwicklungszweig sicherstellen und gleichzeitig private Entwickler-Builds durch den CI-Server ausführen lassen kann. PDF lesen "
-    magazine: "Java Spektrum"
-    year: "2014"
-    edition: "5/2014"
-    link: "https://portal.opitz-consulting.de/marketing_vertrieb/Marketing%20u%20Vertriebsmaterial/Presse-Artikel/Java%20Spektrum/java-spektrum-2014-05_advanced-continuous-integration_attermeyer.pdf"
   -
     title: "Zeig mir deinen Code! Codereviewprozesse und die Commit Stage"
     description: "In vielen Open-Source-Projekten hat sich ein sehr formalisierter Reviewprozess für Codeänderungen etabliert. Beigetragen haben dazu GitHub mit der Verbreitung von Pull Requests und Codereviewsysteme wie Gerrit. Unser Java-Spezialist Richard Attermeyer stellt die Vorgehensweisen vor und betrachtet dabei alle Seiten der Medaille."
