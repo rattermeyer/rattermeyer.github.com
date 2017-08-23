@@ -84,6 +84,18 @@ Aus den Businesszielen ergeben sich in der Regel auch die wichtigen Qualitätssz
 
 ### Qualitätsziele & Qualitätsszenarien
 
+Die Architektur eines Systems versucht die qualitativen Anforderungen eines Systems zu unterstützen.
+Qualitatisziele können durch Szenarien verständlich gemacht werden. Gute Szenarien sind für die fachlichen Stakeholder verständlich und für die umsetzenden Entwickler richtungsweisend.
+
+Insbesondere die wichtigsten Businesssziele sollten durch Qualitätssziele und -szenarien verdeutlicht werden.
+Szenarien sollten dabei als Kommunikationsmittel verstanden werden, nicht als Abnhamekriteren. Daher ist der Aspekt eines Maßes zwar
+wichtig, aber sollte nicht überbewertet werden. Das Antwortmaß kann qualitativ oder auch quantitativ sein. Man sollte sich nur nicht zu lange aufhalten.
+
+Ermitteln kann man die Qualtitätssziele sehr gut im Rahmen eines Anforderungsworkshops. Es ist durchaus sinnvoll, wenn bisher keine
+Qualitätssziele definiert wurden, dafür einen eigenen Workshop anzusetzen.
+
+
+
 (Quality Attribute Workshop + Iteratives vorgehen)
 
 ## Warum das alles?
