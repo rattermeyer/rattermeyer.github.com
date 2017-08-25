@@ -94,11 +94,9 @@ wichtig, aber sollte nicht überbewertet werden. Das Antwortmaß kann qualitativ
 Ermitteln kann man die Qualtitätssziele sehr gut im Rahmen eines Anforderungsworkshops. Es ist durchaus sinnvoll, wenn bisher keine
 Qualitätssziele definiert wurden, dafür einen eigenen Workshop anzusetzen.
 
-
-
 (Quality Attribute Workshop + Iteratives vorgehen)
 
-## Warum das alles?
+## Fazit
 
 Wenn Randbedingungen und Qualitätsszenarien nur moderate Anforderungen an Flexibilität, Erweiterbarkeit, einfache Skalierbarkeit, ...
 liefern und stattdessen: Starres, aktuell nicht auf Continuous Delivery vorbereitete Organisationsstrukturen (Siloorganisation), dann
@@ -110,4 +108,5 @@ sie unabhängig vom aktuellen Sytems ihre Domäne zu beschreiben, bzw. darzustel
 Wenn wir also an dieser Stelle die Entscheidung gegen ein stark verteiltes System treffen, dann ist das die auf jeden Fall die günstigere
 Alternative, als einen schlechten Serviceschnitt und die Kosten für eine neue Organisationsstruktur in die Hand zu nehmen und später den Schnitt nochmal anzupassen.
 
-Also: Kläre ganz bewusst die Motivation für die Nutzung des Microservices Architekturstils.
+Gleichzeitig muss man sich früher mit dem Thema Systemaufteilung beschäftigen, als bei einem monolithischen System.
+Der Last Responsible Moment wird früher im Entwicklungsprozess erreicht.
