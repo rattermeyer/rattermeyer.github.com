@@ -129,6 +129,7 @@ Wenn wir also an dieser Stelle die Entscheidung gegen ein stark verteiltes Syste
 Alternative, als einen schlechten Serviceschnitt und die Kosten für eine neue Organisationsstruktur in die Hand zu nehmen und später den Schnitt nochmal anzupassen.
 
 Gleichzeitig muss man sich früher mit dem Thema Systemaufteilung beschäftigen, als bei einem monolithischen System.
-Der Last Responsible Moment wird früher im Entwicklungsprozess erreicht.
+Der Last Responsible Moment wird früher im Entwicklungsprozess erreicht. Im nächsten Blog Post schau ich mal, welche Möglichkeiten es
+gibt, zu einem Serviceschnitt zu kommen.
 
 <a name="Cohesion">1</a>: Wenn aufgrund von Governance (Bounded Context) die Cohesion eines Microservices durchgesetzt wird.
