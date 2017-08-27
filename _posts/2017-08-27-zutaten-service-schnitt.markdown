@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Verschiebung des LRM beim Service Schnitt"
+title: "Zutaten für einen Service Schnitt"
+date: "2017-08-27"
 authors:
   - richard.attermeyer
 categories:
@@ -91,10 +92,29 @@ Insbesondere die wichtigsten Businesssziele sollten durch Qualitätssziele und -
 Szenarien sollten dabei als Kommunikationsmittel verstanden werden, nicht als Abnhamekriteren. Daher ist der Aspekt eines Maßes zwar
 wichtig, aber sollte nicht überbewertet werden. Das Antwortmaß kann qualitativ oder auch quantitativ sein. Man sollte sich nur nicht zu lange aufhalten.
 
-Ermitteln kann man die Qualtitätssziele sehr gut im Rahmen eines Anforderungsworkshops. Es ist durchaus sinnvoll, wenn bisher keine
-Qualitätssziele definiert wurden, dafür einen eigenen Workshop anzusetzen.
+Ermitteln kann man die Qualtitätssziele sehr gut im Rahmen eines Anforderungsworkshops. Es ist durchaus sinnvoll für die erstmalige Erhebung einen eigenen Workshop anzusetzen.
 
-(Quality Attribute Workshop + Iteratives vorgehen)
+Dann kann man einmal überlegen, welche Qualitätssziele durch Microservices unterstützt werden und welche Herausforderungen bzw. Trade-offs
+dafür eingegangen werden. Insbesondere sollte man einmal überlegen, ob die Herausforderungen akzeptiert werden oder ob Randbedingungen
+die Wahl einschränken.
+
+#### Unterstützte Qualitätsziele / Vorteile
+
+* *Änderbarkeit / Analysierbarkeit* durch kleinere Größe und große Cohesion<sup>[1](#Cohesion)</sup>
+* *Performanz / Skalierbarkeit* durch kleinere Services, die _unabhängig_ voneinander skaliert werden können
+* *Austauschbarkeit* durch kleine Größe ("Design for Replacability")
+* Verbesserung des Time-to-Markets aufgrund unabhängiger Releasezyklen
+
+#### Trade-Offs und Herausforderungen
+* *Betreibarkeit*, da Überwachung und Debugging schwer sein können
+* *Integration*: Notwendigkeit der Collaboration bei gleichzeitiger Unabhängigkeit
+* Komplexität aufgrund der Verteilung:
+  * Remote Calls sind langsam
+  * Netzwerk unzuverlässig
+  * Schwierigkeit des Fehlerhandlings
+* *Organisatorisches Alignment*:
+  * Cross-funktionale Teams, um keine Bottlenecks zu errichten
+* Build, Test und Deployment von vielen unabhängigen Einheiten managen
 
 ## Fazit
 
@@ -110,3 +130,5 @@ Alternative, als einen schlechten Serviceschnitt und die Kosten für eine neue O
 
 Gleichzeitig muss man sich früher mit dem Thema Systemaufteilung beschäftigen, als bei einem monolithischen System.
 Der Last Responsible Moment wird früher im Entwicklungsprozess erreicht.
+
+<a name="Cohesion">1</a>: Wenn aufgrund von Governance (Bounded Context) die Cohesion eines Microservices durchgesetzt wird.
