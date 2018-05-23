@@ -8,7 +8,7 @@ url: "http://www.rattermeyer.de" # the base hostname & protocol for your site
 twitter_username: rattermeyer
 github_username:  rattermeyer
 disqus_username:  rattermeyer
-google_analytics_tracking_id: "UA-72074330-1"
+#google_analytics_tracking_id: "UA-72074330-1"
 
 # Build settings
 markdown: kramdown
